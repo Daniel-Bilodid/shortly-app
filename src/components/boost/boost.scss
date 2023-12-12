@@ -1,0 +1,57 @@
+@import "../../variables.scss";
+
+.boost {
+  position: relative;
+  height: 250px;
+  background: #3a3054;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    color: #fff;
+
+    text-align: center;
+    font-family: $font_popins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    letter-spacing: -1px;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 197px;
+    height: 56px;
+    margin-top: 32px;
+
+    border-radius: 28px;
+    background: #2bd0d0;
+    border: none;
+
+    color: #fff;
+
+    font-family: $font_popins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+  }
+  &__btn:hover {
+    background: #9ae3e3;
+  }
+}
+
+@media (max-width: 730px) {
+  .boost {
+    &__title {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 48px; /* 171.429% */
+      letter-spacing: -0.7px;
+    }
+  }
+}

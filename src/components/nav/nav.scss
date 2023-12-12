@@ -1,0 +1,189 @@
+@import "../../variables.scss";
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 48px;
+  &__menu {
+    display: flex;
+    margin-right: 75px;
+    margin-top: -5px;
+    &-logo {
+      margin-top: 7px;
+    }
+  }
+
+  &__auth {
+    display: flex;
+
+    &-login {
+      color: #9e9aa8;
+
+      font-family: $font_popins;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-right: 37px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.list {
+  display: flex;
+
+  &-item {
+    list-style-type: none;
+
+    color: #9e9aa8;
+
+    font-family: $font_popins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-right: 29px;
+    cursor: pointer;
+  }
+
+  &-item:hover {
+    color: #34313d;
+  }
+}
+
+.sign-button {
+  width: 105px;
+  height: 40px;
+  border-radius: 28px;
+  background: #2bd0d0;
+  border: none;
+  color: #fff;
+
+  font-family: $font_popins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+.sign-button:hover {
+  background: #9ae3e3;
+}
+
+.burger {
+  display: none;
+}
+
+.burger__menu {
+  display: none;
+}
+
+.burger__nav {
+  opacity: 0;
+}
+.hr {
+  opacity: 0;
+}
+
+@media (max-width: 730px) {
+  .list {
+    display: none;
+  }
+
+  .nav__auth {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger__menu {
+    display: block;
+  }
+
+  .burger button {
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+
+  .burger__opacity {
+    opacity: 1;
+  }
+
+  .burger__nav {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    width: 327px;
+    height: 383px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #3a3054;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+    transition: all 0.4s ease-out;
+  }
+
+  .hr {
+    width: 279px;
+    height: 1px;
+    flex-shrink: 0;
+    opacity: 0.25;
+    background: #9e9aa8;
+  }
+
+  .burger__list {
+    margin-top: 40px;
+    padding: 0;
+
+    &-item {
+      margin-top: 30px;
+      width: 82px;
+      list-style-type: none;
+      color: #fff;
+      font-family: $font_popins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-align: center;
+    }
+  }
+
+  .burger__auth {
+    &-login {
+      color: #fff;
+      text-align: center;
+      font-family: $font_popins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-top: 32px;
+    }
+
+    &-button {
+      width: 279px;
+      height: 48px;
+      flex-shrink: 0;
+
+      border-radius: 28px;
+      border: none;
+      background: #2bd0d0;
+      margin-top: 24px;
+
+      color: #fff;
+      font-family: $font_popins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}
