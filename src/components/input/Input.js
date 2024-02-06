@@ -73,7 +73,7 @@ const Input = () => {
   };
 
   return (
-    <aside>
+    <aside id="pass-aside-aria-label-1" aria-label="aside-label-1">
       <div className="shorten">
         <form className="inputs" onSubmit={handleSubmit}>
           <div className="inputs__wrapper">
