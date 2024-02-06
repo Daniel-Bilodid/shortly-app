@@ -6,7 +6,7 @@ import customize from "../../assets/icon-fully-customizable.svg";
 
 const Statistics = () => {
   return (
-    <main>
+    <main role="main">
       <div className="statistic">
         <div className="statistic__title">Advanced Statistics</div>
         <div className="statistic__subtitle">
