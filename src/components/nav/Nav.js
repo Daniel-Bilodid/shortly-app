@@ -63,6 +63,7 @@ const Nav = () => {
             <li className="burger__list-item">Features</li>
             <li className="burger__list-item">Pricing</li>
             <li className="burger__list-item">Resources</li>
+            <h1 className="h1">none</h1>
           </ul>
         </div>
         <div className="hr"></div>
