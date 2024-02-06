@@ -8,6 +8,14 @@ const Nav = () => {
     setIsBurgerOpen((prevState) => !prevState);
   };
 
+  const bodyElement = document.querySelector("body");
+
+  if (isBurgerOpen) {
+    bodyElement.style.overflow = "hidden";
+  } else {
+    bodyElement.style.overflow = "visible";
+  }
+
   return (
     <>
       <div className="nav">
